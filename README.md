@@ -4,7 +4,7 @@ This is another attempt at developing my personal website. I hope that this time
 I chose to switch from React with Javascript and CSS to Next wiht Typescript and SASS in order to increase my understanding of more tools. I do not have a particular grasp on hte advantages of either, and I simply want to explore the technical development of other frameworks.
 
 ## Installing New Dependencies ##
-I will install new dependencies with yarn as my package manager.
+I will install new dependencies with yarn as my package manager. Currently I am using yarn v1.22.11.
 
 ```
 yarn install 
