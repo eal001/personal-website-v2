@@ -1,11 +1,9 @@
-import type { NextPage } from 'next'
-
+import type { NextPage } from 'next';
+import App from './_app';
 
 const Home: NextPage = () => {
   return (
-    <div>
-      <h1>HEADING!</h1>
-    </div>
+    <App/>
   )
 }
 

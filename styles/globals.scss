@@ -1,0 +1,39 @@
+$title-font: Helvetica;
+$desc-font: Helvetica;
+$bg-color: #f0ead6;
+$card-color: #cacaca;
+$font-color: #292929;
+$outline-color: #000000;
+$highlight-color: #9A879D;
+
+html {
+    body {
+        background-color: $bg-color;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: $font-color;
+    font: 48px $title-font;
+}
+
+h2 { 
+    text-align: center;
+    color: $font-color;
+    font: 24px $title-font;
+}
+
+p {
+    text-align: left;
+    color: $font-color;
+    font: 18px $desc-font;
+
+    a {
+       color: $highlight-color;
+        
+       &:hover{
+        font-weight: 900;
+       }
+    }
+}

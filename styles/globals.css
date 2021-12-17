@@ -1,1 +1,29 @@
+html body {
+  background-color: #f0ead6;
+}
 
+h1 {
+  text-align: center;
+  color: #292929;
+  font: 48px Helvetica;
+}
+
+h2 {
+  text-align: center;
+  color: #292929;
+  font: 24px Helvetica;
+}
+
+p {
+  text-align: left;
+  color: #292929;
+  font: 18px Helvetica;
+}
+p a {
+  color: #9A879D;
+}
+p a:hover {
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=globals.css.map */
