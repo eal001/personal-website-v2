@@ -1,3 +1,4 @@
+// this is for the typescript compiler to pickup Next.js types ?
 /// <reference types="next" />
 /// <reference types="next/image-types/global" />
 
