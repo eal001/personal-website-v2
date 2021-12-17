@@ -83,7 +83,6 @@ p a:hover {
 #overlay {
   z-index: 2;
   position: fixed;
-  overscroll-behavior: contain;
 }
 #overlay #content {
   overflow: scroll;
