@@ -1,9 +1,9 @@
 $title-font: Helvetica;
 $desc-font: Helvetica;
 $bg-color: #f0ead6;
-$card-color: #cacaca;
+$card-color: #cababa;
 $font-color: #292929;
-$outline-color: #000000;
+$outline-color: #777777;
 $highlight-color: #9A879D;
 
 html {
@@ -36,4 +36,84 @@ p {
         font-weight: 900;
        }
     }
+}
+
+@mixin animate($animation,$duration,$method,$times) {
+    animation: $animation $duration $method $times;
+    -o-animation: $animation $duration $method $times;
+    -moz-animation: $animation $duration $method $times;
+    -webkit-animation: $animation $duration $method $times;
+}
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    };
+    @-o-keyframes #{$name}{
+        @content;
+    };
+    @-moz-keyframes #{$name}{
+        @content;
+    };
+    @-webkit-keyframes #{$name}{
+        @content;
+    };
+}
+
+@include keyframes(float){
+    from{top: 100vh;}
+    to{top: 0vh;}
+}
+
+#background{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(../public/pirateTower_laguna.jpg);
+    height: 100vh;
+    width:  100vw;
+    overflow: auto;
+    z-index: 1;
+
+    #particle { 
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        z-index: 1;
+        @include animate(float, 5s, linear, infinite)
+    }   
+}
+
+#overlay {
+    z-index: 2;
+    position: fixed;
+    #content {
+        overflow: scroll;
+    }
+}
+
+
+#intro {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    top: 5vh;
+    left: 5vw;
+    height: 90vh;
+    width: 90vw;
+    
+    h1 {
+        text-align: center;
+        color: $font-color;
+        font: 48px $title-font;
+    }
+}
+
+#card {
+    position: relative;
+    z-index: 2;
+    height: 100px;
+    width: 80%;
+    margin: 10%; 
+    background-color: $card-color;
 }

@@ -4,12 +4,40 @@
  */
 
 import '../styles/globals.css'
+import Intro from '../components/IntroCard'
+import {Particle} from '../components/Particle/index'
+import internal from 'stream'
+import { useState } from 'react'
 
 const App  = () => {
+    // const [particles, setParticles] = useState<Particle[]>([]);
+    // let x = 0;
+    // let y = 100;
+    // let speed = 0;
+    // let temp: Particle[] = particles
+    // //generate particle objects
+    // for(let i = 0; i < 100 ; i++){
+    //     x = i + (Math.random() - 0.5)
+    //     y = 100;
+    //     speed = Math.random()*10
+    //     let temp = particles
+    //     temp.push(new Particle(x, y, speed, 'black'))
+    //     setParticles( temp )
+    // }
+
+
     return (
-        <div id='background'>
-            <h1>HEADING!</h1>
-            <p>this is a sentence with a test <a href='https://example.com/' target='_blank'>LINK</a> </p>
+        <div>
+            <div id='overlay'>
+                <div id='content'>
+                    <Intro/>
+                    <div id='card'></div>
+                    <div id='card'></div>
+                </div>
+            </div>
+            <div id='background'>
+                <div id='particle' style={ { backgroundColor: 'black', top: "100%", left: "10px"} }></div>
+            </div>
         </div>
     )
 }

@@ -26,4 +26,91 @@ p a:hover {
   font-weight: 900;
 }
 
+@keyframes float {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0vh;
+  }
+}
+@-o-keyframes float {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0vh;
+  }
+}
+@-moz-keyframes float {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0vh;
+  }
+}
+@-webkit-keyframes float {
+  from {
+    top: 100vh;
+  }
+  to {
+    top: 0vh;
+  }
+}
+#background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url(../public/pirateTower_laguna.jpg);
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  z-index: 1;
+}
+#background #particle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  z-index: 1;
+  animation: float 5s linear infinite;
+  -o-animation: float 5s linear infinite;
+  -moz-animation: float 5s linear infinite;
+  -webkit-animation: float 5s linear infinite;
+}
+
+#overlay {
+  z-index: 2;
+  position: fixed;
+  overscroll-behavior: contain;
+}
+#overlay #content {
+  overflow: scroll;
+}
+
+#intro {
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  top: 5vh;
+  left: 5vw;
+  height: 90vh;
+  width: 90vw;
+}
+#intro h1 {
+  text-align: center;
+  color: #292929;
+  font: 48px Helvetica;
+}
+
+#card {
+  position: relative;
+  z-index: 2;
+  height: 100px;
+  width: 80%;
+  margin: 10%;
+  background-color: #cababa;
+}
+
 /*# sourceMappingURL=globals.css.map */
