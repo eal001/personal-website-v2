@@ -1,10 +1,13 @@
 $title-font: Helvetica;
 $desc-font: Helvetica;
-$bg-color: #f0ead6;
-$card-color: #cababa;
+$bg-color: #000000;
+$bg-gradient-end: #0B0B45;
+$bg-gradient-start: #473e5e;
+$particle-color: #d7bedf;
+$card-color: #595a54;
 $font-color: #292929;
-$outline-color: #777777;
-$highlight-color: #9A879D;
+$outline-color: #EDDFEF;
+$highlight-color: #EDDFEF;
 $TOTALS: 100;
 
 html {
@@ -78,14 +81,14 @@ p {
 
 @include keyframes(float){
     0%{top: 100vh;}
-    100%{top: 0vh;}
+    100%{top: -10vh;}
 }
 
 @include keyframes(wiggle){
     0%{transform: translateX(0px);}
-    25%{transform: translateX(10px);}
+    25%{transform: translateX(50px);}
     50%{transform: translateX(0px);}
-    75%{transform: translatex(-10px);}
+    75%{transform: translatex(-50px);}
     // 100%{transform: translateX(0px);}
 }
 
@@ -94,35 +97,48 @@ p {
     position: fixed;
     top: 0px;
     left: 0px;
-    background-image: url(../public/pirateTower_laguna.jpg);
+    background: linear-gradient(to top, $bg-gradient-start 0%, $bg-gradient-end 20%, $bg-color 100% );
+    // background-image: url(../public/pirateTower_laguna.jpg);
     height: 100vh;
     width:  100vw;
     overflow: hidden;
-    z-index: 1;
-
-
-    .particle {
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        z-index: 1;
-        @for $i from 1 through $TOTALS {
-            &:nth-child(#{$i}) {  
-                $speed:  random(15);
-                $float_animation: float $speed+15+s linear infinite random(60)+s;
-                $wiggle_animation: wiggle ($speed/15)*5+10+s ease-in infinite 0ms;
-                // @include animate(float, random(15) + 5 + s, linear, infinite, random(60)+ s);
-                // @include animate(wiggle, random(2000) + 1000 + ms, linear, infinite, 0s);
-                @include animate_n($float_animation, $wiggle_animation)
-            }  
-        }
-    }
    
 }
 
+.particle-container { 
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+
+    &:hover{
+        .particle {
+            background-color: $highlight-color;
+            margin: auto;
+            width: 2.5px;
+            height: 2.5px;
+        }
+    }
+
+    .particle {
+        margin: auto;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: $particle-color;
+        
+    }
+    @for $i from 1 through $TOTALS {
+        &:nth-child(#{$i}) {  
+            $speed:  random(15);
+            $float_animation: float $speed+15+s linear infinite random(60)+s;
+            $wiggle_animation: wiggle ($speed/15)*6+15+s ease-in-out infinite 0ms;
+            @include animate_n($float_animation, $wiggle_animation)
+        }  
+    }
+}
+
 #overlay {
-    z-index: 2;
     position: relative;
     width: 100vw;
     overflow: hidden;
@@ -146,9 +162,11 @@ p {
 
 #card {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     height: 100px;
     width: 80%;
     margin: 10%; 
     background-color: $card-color;
+    border-radius: 20px;
+    border: 1px solid $outline-color;
 }

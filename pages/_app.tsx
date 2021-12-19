@@ -10,18 +10,21 @@ import internal from 'stream'
 import { useState } from 'react'
 
 //create all the particles
-const TOTAL = 100 
-let particles: Particle[] = []
+const TOTAL = 100; 
+let particles: Particle[] = [];
 for(let i = 0; i < TOTAL; i++){
-    particles.push(new Particle('100%', (i/TOTAL*100)+'%', 'black' , i))
+    particles.push(new Particle('100%', (i/TOTAL*100)+'%', i));
 }
-console.log(TOTAL)
-console.log(particles)
+// console.log(TOTAL);
+// console.log(particles);
 
 const App  = () => {
 
     return (
         <div>
+            
+            <div id='background'>
+
             <div id='overlay'>
                 <div id='card'></div>
                 <div id='card'></div>
@@ -33,7 +36,7 @@ const App  = () => {
                 <div id='card'></div>
                 <div id='card'></div>
             </div>
-            <div id='background'>
+
                 {
                     particles.map(particle => {
                         return particle.render()
