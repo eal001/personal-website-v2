@@ -5,6 +5,7 @@ $card-color: #cababa;
 $font-color: #292929;
 $outline-color: #777777;
 $highlight-color: #9A879D;
+$TOTALS: 100;
 
 html {
     body {
@@ -38,12 +39,28 @@ p {
     }
 }
 
-@mixin animate($animation,$duration,$method,$times) {
-    animation: $animation $duration $method $times;
-    -o-animation: $animation $duration $method $times;
-    -moz-animation: $animation $duration $method $times;
-    -webkit-animation: $animation $duration $method $times;
+@mixin animate($animation,$duration,$method,$times,$delay) {
+    animation: $animation $duration $method $times $delay;
+    -o-animation: $animation $duration $method $times $delay;
+    -moz-animation: $animation $duration $method $times $delay;
+    -webkit-animation: $animation $duration $method $times $delay;
 }
+
+@mixin animate_n($animations...) {
+    $params: '';
+    @for $i from 1 through length($animations) {
+        @if $i == 1 {
+            $params: nth($animations, $i) ;
+        } @else {
+            $params: $params + ',' + nth($animations, $i);
+        }
+    }
+    animation: unquote($params);
+    -o-animation: unquote($params);
+    -moz-animation: unquote($params);
+    -webkit-animation: unquote($params);
+}
+
 @mixin keyframes($name){
     @keyframes #{$name}{
         @content;
@@ -60,38 +77,56 @@ p {
 }
 
 @include keyframes(float){
-    from{top: 100vh;}
-    to{top: 0vh;}
+    0%{top: 100vh;}
+    100%{top: 0vh;}
 }
 
+@include keyframes(wiggle){
+    0%{transform: translateX(0px);}
+    25%{transform: translateX(10px);}
+    50%{transform: translateX(0px);}
+    75%{transform: translatex(-10px);}
+    // 100%{transform: translateX(0px);}
+}
+
+
 #background{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     background-image: url(../public/pirateTower_laguna.jpg);
     height: 100vh;
     width:  100vw;
-    overflow: auto;
+    overflow: hidden;
     z-index: 1;
 
-    #particle { 
+
+    .particle {
         position: absolute;
         width: 5px;
         height: 5px;
         border-radius: 50%;
         z-index: 1;
-        @include animate(float, 5s, linear, infinite)
-    }   
+        @for $i from 1 through $TOTALS {
+            &:nth-child(#{$i}) {  
+                $speed:  random(15);
+                $float_animation: float $speed+15+s linear infinite random(60)+s;
+                $wiggle_animation: wiggle ($speed/15)*5+10+s ease-in infinite 0ms;
+                // @include animate(float, random(15) + 5 + s, linear, infinite, random(60)+ s);
+                // @include animate(wiggle, random(2000) + 1000 + ms, linear, infinite, 0s);
+                @include animate_n($float_animation, $wiggle_animation)
+            }  
+        }
+    }
+   
 }
 
 #overlay {
     z-index: 2;
-    position: fixed;
-    #content {
-        overflow: scroll;
-    }
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
 }
-
 
 #intro {
     position: relative;

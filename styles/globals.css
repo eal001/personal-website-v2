@@ -27,65 +27,716 @@ p a:hover {
 }
 
 @keyframes float {
-  from {
+  0% {
     top: 100vh;
   }
-  to {
+  100% {
     top: 0vh;
   }
 }
 @-o-keyframes float {
-  from {
+  0% {
     top: 100vh;
   }
-  to {
+  100% {
     top: 0vh;
   }
 }
 @-moz-keyframes float {
-  from {
+  0% {
     top: 100vh;
   }
-  to {
+  100% {
     top: 0vh;
   }
 }
 @-webkit-keyframes float {
-  from {
+  0% {
     top: 100vh;
   }
-  to {
+  100% {
     top: 0vh;
   }
 }
+@keyframes wiggle {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translatex(-10px);
+  }
+}
+@-o-keyframes wiggle {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translatex(-10px);
+  }
+}
+@-moz-keyframes wiggle {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translatex(-10px);
+  }
+}
+@-webkit-keyframes wiggle {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75% {
+    transform: translatex(-10px);
+  }
+}
 #background {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   background-image: url(../public/pirateTower_laguna.jpg);
   height: 100vh;
   width: 100vw;
-  overflow: auto;
+  overflow: hidden;
   z-index: 1;
 }
-#background #particle {
+#background .particle {
   position: absolute;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   z-index: 1;
-  animation: float 5s linear infinite;
-  -o-animation: float 5s linear infinite;
-  -moz-animation: float 5s linear infinite;
-  -webkit-animation: float 5s linear infinite;
+}
+#background .particle:nth-child(1) {
+  animation: float 27s linear infinite 35s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 35s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 35s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 35s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(2) {
+  animation: float 29s linear infinite 14s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -o-animation: float 29s linear infinite 14s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 29s linear infinite 14s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 29s linear infinite 14s,wiggle 14.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(3) {
+  animation: float 30s linear infinite 46s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 46s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 46s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 46s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(4) {
+  animation: float 18s linear infinite 51s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 51s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 51s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 51s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(5) {
+  animation: float 28s linear infinite 13s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 13s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 13s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 13s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(6) {
+  animation: float 25s linear infinite 9s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 9s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 9s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 9s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(7) {
+  animation: float 17s linear infinite 28s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 28s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 28s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 28s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(8) {
+  animation: float 23s linear infinite 45s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -o-animation: float 23s linear infinite 45s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 23s linear infinite 45s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 23s linear infinite 45s,wiggle 12.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(9) {
+  animation: float 28s linear infinite 54s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 54s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 54s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 54s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(10) {
+  animation: float 30s linear infinite 54s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 54s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 54s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 54s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(11) {
+  animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(12) {
+  animation: float 26s linear infinite 23s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -o-animation: float 26s linear infinite 23s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 26s linear infinite 23s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 26s linear infinite 23s,wiggle 13.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(13) {
+  animation: float 18s linear infinite 53s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 53s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 53s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 53s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(14) {
+  animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(15) {
+  animation: float 16s linear infinite 44s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 44s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 44s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 44s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(16) {
+  animation: float 24s linear infinite 32s,wiggle 13s ease-in infinite 0ms;
+  -o-animation: float 24s linear infinite 32s,wiggle 13s ease-in infinite 0ms;
+  -moz-animation: float 24s linear infinite 32s,wiggle 13s ease-in infinite 0ms;
+  -webkit-animation: float 24s linear infinite 32s,wiggle 13s ease-in infinite 0ms;
+}
+#background .particle:nth-child(17) {
+  animation: float 18s linear infinite 6s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 6s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 6s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 6s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(18) {
+  animation: float 30s linear infinite 39s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 39s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 39s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 39s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(19) {
+  animation: float 19s linear infinite 40s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -o-animation: float 19s linear infinite 40s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 19s linear infinite 40s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 19s linear infinite 40s,wiggle 11.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(20) {
+  animation: float 30s linear infinite 50s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 50s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 50s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 50s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(21) {
+  animation: float 21s linear infinite 53s,wiggle 12s ease-in infinite 0ms;
+  -o-animation: float 21s linear infinite 53s,wiggle 12s ease-in infinite 0ms;
+  -moz-animation: float 21s linear infinite 53s,wiggle 12s ease-in infinite 0ms;
+  -webkit-animation: float 21s linear infinite 53s,wiggle 12s ease-in infinite 0ms;
+}
+#background .particle:nth-child(22) {
+  animation: float 22s linear infinite 18s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -o-animation: float 22s linear infinite 18s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 22s linear infinite 18s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 22s linear infinite 18s,wiggle 12.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(23) {
+  animation: float 16s linear infinite 17s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 17s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 17s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 17s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(24) {
+  animation: float 24s linear infinite 8s,wiggle 13s ease-in infinite 0ms;
+  -o-animation: float 24s linear infinite 8s,wiggle 13s ease-in infinite 0ms;
+  -moz-animation: float 24s linear infinite 8s,wiggle 13s ease-in infinite 0ms;
+  -webkit-animation: float 24s linear infinite 8s,wiggle 13s ease-in infinite 0ms;
+}
+#background .particle:nth-child(25) {
+  animation: float 30s linear infinite 30s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 30s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 30s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 30s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(26) {
+  animation: float 26s linear infinite 46s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -o-animation: float 26s linear infinite 46s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 26s linear infinite 46s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 26s linear infinite 46s,wiggle 13.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(27) {
+  animation: float 27s linear infinite 55s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 55s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 55s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 55s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(28) {
+  animation: float 25s linear infinite 36s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 36s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 36s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 36s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(29) {
+  animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -o-animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(30) {
+  animation: float 22s linear infinite 8s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -o-animation: float 22s linear infinite 8s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 22s linear infinite 8s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 22s linear infinite 8s,wiggle 12.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(31) {
+  animation: float 17s linear infinite 30s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 30s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 30s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 30s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(32) {
+  animation: float 20s linear infinite 48s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -o-animation: float 20s linear infinite 48s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 20s linear infinite 48s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 20s linear infinite 48s,wiggle 11.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(33) {
+  animation: float 29s linear infinite 26s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -o-animation: float 29s linear infinite 26s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 29s linear infinite 26s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 29s linear infinite 26s,wiggle 14.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(34) {
+  animation: float 18s linear infinite 47s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 47s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 47s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 47s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(35) {
+  animation: float 27s linear infinite 2s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 2s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 2s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 2s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(36) {
+  animation: float 21s linear infinite 60s,wiggle 12s ease-in infinite 0ms;
+  -o-animation: float 21s linear infinite 60s,wiggle 12s ease-in infinite 0ms;
+  -moz-animation: float 21s linear infinite 60s,wiggle 12s ease-in infinite 0ms;
+  -webkit-animation: float 21s linear infinite 60s,wiggle 12s ease-in infinite 0ms;
+}
+#background .particle:nth-child(37) {
+  animation: float 22s linear infinite 56s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -o-animation: float 22s linear infinite 56s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 22s linear infinite 56s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 22s linear infinite 56s,wiggle 12.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(38) {
+  animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 21s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(39) {
+  animation: float 29s linear infinite 42s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -o-animation: float 29s linear infinite 42s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 29s linear infinite 42s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 29s linear infinite 42s,wiggle 14.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(40) {
+  animation: float 28s linear infinite 11s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 11s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 11s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 11s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(41) {
+  animation: float 24s linear infinite 18s,wiggle 13s ease-in infinite 0ms;
+  -o-animation: float 24s linear infinite 18s,wiggle 13s ease-in infinite 0ms;
+  -moz-animation: float 24s linear infinite 18s,wiggle 13s ease-in infinite 0ms;
+  -webkit-animation: float 24s linear infinite 18s,wiggle 13s ease-in infinite 0ms;
+}
+#background .particle:nth-child(42) {
+  animation: float 30s linear infinite 29s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 29s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 29s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 29s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(43) {
+  animation: float 29s linear infinite 33s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -o-animation: float 29s linear infinite 33s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 29s linear infinite 33s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 29s linear infinite 33s,wiggle 14.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(44) {
+  animation: float 24s linear infinite 4s,wiggle 13s ease-in infinite 0ms;
+  -o-animation: float 24s linear infinite 4s,wiggle 13s ease-in infinite 0ms;
+  -moz-animation: float 24s linear infinite 4s,wiggle 13s ease-in infinite 0ms;
+  -webkit-animation: float 24s linear infinite 4s,wiggle 13s ease-in infinite 0ms;
+}
+#background .particle:nth-child(45) {
+  animation: float 28s linear infinite 14s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 14s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 14s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 14s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(46) {
+  animation: float 26s linear infinite 4s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -o-animation: float 26s linear infinite 4s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 26s linear infinite 4s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 26s linear infinite 4s,wiggle 13.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(47) {
+  animation: float 16s linear infinite 7s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 7s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 7s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 7s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(48) {
+  animation: float 16s linear infinite 18s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 18s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 18s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 18s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(49) {
+  animation: float 18s linear infinite 49s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 49s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 49s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 49s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(50) {
+  animation: float 16s linear infinite 22s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 22s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 22s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 22s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(51) {
+  animation: float 20s linear infinite 19s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -o-animation: float 20s linear infinite 19s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 20s linear infinite 19s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 20s linear infinite 19s,wiggle 11.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(52) {
+  animation: float 28s linear infinite 32s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 32s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 32s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 32s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(53) {
+  animation: float 25s linear infinite 49s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 49s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 49s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 49s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(54) {
+  animation: float 17s linear infinite 5s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 5s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 5s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 5s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(55) {
+  animation: float 19s linear infinite 37s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -o-animation: float 19s linear infinite 37s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 19s linear infinite 37s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 19s linear infinite 37s,wiggle 11.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(56) {
+  animation: float 24s linear infinite 14s,wiggle 13s ease-in infinite 0ms;
+  -o-animation: float 24s linear infinite 14s,wiggle 13s ease-in infinite 0ms;
+  -moz-animation: float 24s linear infinite 14s,wiggle 13s ease-in infinite 0ms;
+  -webkit-animation: float 24s linear infinite 14s,wiggle 13s ease-in infinite 0ms;
+}
+#background .particle:nth-child(57) {
+  animation: float 28s linear infinite 18s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 18s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 18s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 18s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(58) {
+  animation: float 24s linear infinite 41s,wiggle 13s ease-in infinite 0ms;
+  -o-animation: float 24s linear infinite 41s,wiggle 13s ease-in infinite 0ms;
+  -moz-animation: float 24s linear infinite 41s,wiggle 13s ease-in infinite 0ms;
+  -webkit-animation: float 24s linear infinite 41s,wiggle 13s ease-in infinite 0ms;
+}
+#background .particle:nth-child(59) {
+  animation: float 28s linear infinite 7s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 7s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 7s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 7s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(60) {
+  animation: float 27s linear infinite 44s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 44s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 44s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 44s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(61) {
+  animation: float 16s linear infinite 40s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 40s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 40s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 40s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(62) {
+  animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 48s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(63) {
+  animation: float 19s linear infinite 5s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -o-animation: float 19s linear infinite 5s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 19s linear infinite 5s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 19s linear infinite 5s,wiggle 11.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(64) {
+  animation: float 25s linear infinite 34s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 34s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 34s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 34s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(65) {
+  animation: float 23s linear infinite 8s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -o-animation: float 23s linear infinite 8s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 23s linear infinite 8s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 23s linear infinite 8s,wiggle 12.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(66) {
+  animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -o-animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 22s linear infinite 24s,wiggle 12.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(67) {
+  animation: float 29s linear infinite 40s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -o-animation: float 29s linear infinite 40s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 29s linear infinite 40s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 29s linear infinite 40s,wiggle 14.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(68) {
+  animation: float 30s linear infinite 8s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 8s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 8s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 8s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(69) {
+  animation: float 24s linear infinite 45s,wiggle 13s ease-in infinite 0ms;
+  -o-animation: float 24s linear infinite 45s,wiggle 13s ease-in infinite 0ms;
+  -moz-animation: float 24s linear infinite 45s,wiggle 13s ease-in infinite 0ms;
+  -webkit-animation: float 24s linear infinite 45s,wiggle 13s ease-in infinite 0ms;
+}
+#background .particle:nth-child(70) {
+  animation: float 18s linear infinite 10s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 10s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 10s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 10s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(71) {
+  animation: float 17s linear infinite 23s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 23s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 23s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 23s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(72) {
+  animation: float 17s linear infinite 26s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 26s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 26s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 26s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(73) {
+  animation: float 22s linear infinite 21s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -o-animation: float 22s linear infinite 21s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 22s linear infinite 21s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 22s linear infinite 21s,wiggle 12.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(74) {
+  animation: float 18s linear infinite 45s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 45s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 45s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 45s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(75) {
+  animation: float 25s linear infinite 21s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 21s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 21s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 21s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(76) {
+  animation: float 26s linear infinite 57s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -o-animation: float 26s linear infinite 57s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 26s linear infinite 57s,wiggle 13.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 26s linear infinite 57s,wiggle 13.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(77) {
+  animation: float 25s linear infinite 18s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 18s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 18s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 18s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(78) {
+  animation: float 16s linear infinite 43s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 43s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 43s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 43s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(79) {
+  animation: float 18s linear infinite 20s,wiggle 11s ease-in infinite 0ms;
+  -o-animation: float 18s linear infinite 20s,wiggle 11s ease-in infinite 0ms;
+  -moz-animation: float 18s linear infinite 20s,wiggle 11s ease-in infinite 0ms;
+  -webkit-animation: float 18s linear infinite 20s,wiggle 11s ease-in infinite 0ms;
+}
+#background .particle:nth-child(80) {
+  animation: float 27s linear infinite 32s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 32s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 32s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 32s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(81) {
+  animation: float 27s linear infinite 10s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 10s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 10s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 10s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(82) {
+  animation: float 20s linear infinite 23s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -o-animation: float 20s linear infinite 23s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 20s linear infinite 23s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 20s linear infinite 23s,wiggle 11.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(83) {
+  animation: float 29s linear infinite 25s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -o-animation: float 29s linear infinite 25s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 29s linear infinite 25s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 29s linear infinite 25s,wiggle 14.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(84) {
+  animation: float 16s linear infinite 48s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 48s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 48s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 48s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(85) {
+  animation: float 17s linear infinite 35s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 35s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 35s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 35s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(86) {
+  animation: float 23s linear infinite 50s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -o-animation: float 23s linear infinite 50s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 23s linear infinite 50s,wiggle 12.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 23s linear infinite 50s,wiggle 12.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(87) {
+  animation: float 22s linear infinite 50s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -o-animation: float 22s linear infinite 50s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 22s linear infinite 50s,wiggle 12.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 22s linear infinite 50s,wiggle 12.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(88) {
+  animation: float 20s linear infinite 12s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -o-animation: float 20s linear infinite 12s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 20s linear infinite 12s,wiggle 11.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 20s linear infinite 12s,wiggle 11.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(89) {
+  animation: float 17s linear infinite 55s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -o-animation: float 17s linear infinite 55s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 17s linear infinite 55s,wiggle 10.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 17s linear infinite 55s,wiggle 10.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(90) {
+  animation: float 28s linear infinite 59s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -o-animation: float 28s linear infinite 59s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 28s linear infinite 59s,wiggle 14.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 28s linear infinite 59s,wiggle 14.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(91) {
+  animation: float 19s linear infinite 50s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -o-animation: float 19s linear infinite 50s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 19s linear infinite 50s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 19s linear infinite 50s,wiggle 11.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(92) {
+  animation: float 29s linear infinite 37s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -o-animation: float 29s linear infinite 37s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -moz-animation: float 29s linear infinite 37s,wiggle 14.6666666667s ease-in infinite 0ms;
+  -webkit-animation: float 29s linear infinite 37s,wiggle 14.6666666667s ease-in infinite 0ms;
+}
+#background .particle:nth-child(93) {
+  animation: float 19s linear infinite 57s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -o-animation: float 19s linear infinite 57s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 19s linear infinite 57s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 19s linear infinite 57s,wiggle 11.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(94) {
+  animation: float 16s linear infinite 15s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -o-animation: float 16s linear infinite 15s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 16s linear infinite 15s,wiggle 10.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 16s linear infinite 15s,wiggle 10.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(95) {
+  animation: float 27s linear infinite 45s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 45s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 45s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 45s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(96) {
+  animation: float 25s linear infinite 10s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 10s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 10s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 10s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(97) {
+  animation: float 25s linear infinite 44s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -o-animation: float 25s linear infinite 44s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 25s linear infinite 44s,wiggle 13.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 25s linear infinite 44s,wiggle 13.3333333333s ease-in infinite 0ms;
+}
+#background .particle:nth-child(98) {
+  animation: float 30s linear infinite 5s,wiggle 15s ease-in infinite 0ms;
+  -o-animation: float 30s linear infinite 5s,wiggle 15s ease-in infinite 0ms;
+  -moz-animation: float 30s linear infinite 5s,wiggle 15s ease-in infinite 0ms;
+  -webkit-animation: float 30s linear infinite 5s,wiggle 15s ease-in infinite 0ms;
+}
+#background .particle:nth-child(99) {
+  animation: float 27s linear infinite 47s,wiggle 14s ease-in infinite 0ms;
+  -o-animation: float 27s linear infinite 47s,wiggle 14s ease-in infinite 0ms;
+  -moz-animation: float 27s linear infinite 47s,wiggle 14s ease-in infinite 0ms;
+  -webkit-animation: float 27s linear infinite 47s,wiggle 14s ease-in infinite 0ms;
+}
+#background .particle:nth-child(100) {
+  animation: float 19s linear infinite 29s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -o-animation: float 19s linear infinite 29s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -moz-animation: float 19s linear infinite 29s,wiggle 11.3333333333s ease-in infinite 0ms;
+  -webkit-animation: float 19s linear infinite 29s,wiggle 11.3333333333s ease-in infinite 0ms;
 }
 
 #overlay {
   z-index: 2;
-  position: fixed;
-}
-#overlay #content {
-  overflow: scroll;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #intro {

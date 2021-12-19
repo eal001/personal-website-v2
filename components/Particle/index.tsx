@@ -1,22 +1,20 @@
 export class Particle {
 
-    x : number;
-    y : number;
-    speed : number;
+    x : string;
+    y : string;
     color : string;
+    key : string;
 
-    constructor(x: number, y: number, speed: number, color: string){
+    constructor(x: string, y: string, color: string, key: number){
         this.x = x;
         this.y = y;
-        this.speed = speed;
         this.color = color;
+        this.key = 'particleNumber' + key;
     }
 
     render() {
         return (
-            <div className='particle' background-color={this.color} style={ { top: this.x, left: this.y} }>
-
-            </div>
+            <div className='particle' key={this.key} style={ { backgroundColor: this.color, top: this.x, left: this.y} }></div>
         )
     }
 }
