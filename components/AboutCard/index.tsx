@@ -4,7 +4,7 @@ const AboutCard = () => {
         <div id='about'>
             <div id='card'>
                 <h1>About Me</h1>
-                <h2 style={{}}>
+                <h2>
                     I create 
                     <br/><a>fullstack applications</a>, 
                     <br/><a>responsive websites</a>, 

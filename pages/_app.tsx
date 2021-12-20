@@ -8,6 +8,7 @@ import Intro from '../components/IntroCard'
 import {Particle} from '../components/Particle/index'
 import NavBar from '../components/NavBar';
 import About from '../components/AboutCard'
+import Projects from '../components/ProjectsCard';
 
 //create all the particles
 const TOTAL = 100; 
@@ -30,14 +31,7 @@ const App  = () => {
                     <Intro/>
                     <NavBar/>
                     <About />
-                    <div id='placeholder'></div>
-                    <div id='placeholder'></div>
-                    <div id='placeholder'></div>
-                    <div id='projects'></div>
-                    <div id='placeholder'></div>
-                    <div id='placeholder'></div>
-                    <div id='contact'></div>
-                    <div id='placeholder'></div>
+                    <Projects />
                 </div>
         </div>
     )
