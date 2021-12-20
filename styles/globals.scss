@@ -10,6 +10,8 @@ $card-color: rgb(28, 27, 31, 0.1);
 $card-outline-color: #e9dce8; //#595a54;
 $font-color: #756277;
 $highlight-color: #c050cf;
+$scroll-color: rgb(192, 80, 207, 0.2);
+$scroll-select-color: rgb(192, 80, 207, 0.5);
 $TOTALS: 100;
 
 // General Styling
@@ -19,7 +21,23 @@ html {
     body {
         background-color: $bg-color;
         overflow-x: hidden;
+        overflow-y: overlay;
         letter-spacing: 4px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $scroll-color;
+    &:hover{
+        background-color: $scroll-select-color;
     }
 }
 
