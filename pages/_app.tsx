@@ -6,43 +6,38 @@
 import '../styles/globals.css'
 import Intro from '../components/IntroCard'
 import {Particle} from '../components/Particle/index'
-import internal from 'stream'
-import { useState } from 'react'
+import NavBar from '../components/NavBar';
 
 //create all the particles
 const TOTAL = 100; 
 let particles: Particle[] = [];
 for(let i = 0; i < TOTAL; i++){
-    particles.push(new Particle('100%', (i/TOTAL*100)+'%', i));
+    particles.push(new Particle((i/TOTAL*100)+'%', '100%', i));
 }
-// console.log(TOTAL);
-// console.log(particles);
 
 const App  = () => {
-
     return (
         <div>
-            
             <div id='background'>
-
-            <div id='overlay'>
-                <div id='card'></div>
-                <div id='card'></div>
-                <div id='card'></div>
-                <div id='card'></div>
-                <div id='card'></div>
-                <div id='card'></div>
-                <div id='card'></div>
-                <div id='card'></div>
-                <div id='card'></div>
-            </div>
-
                 {
                     particles.map(particle => {
                         return particle.render()
                     })
                 }
             </div>
+            <div id='overlay'>
+                    <Intro/>
+                    <NavBar/>
+                    <div id='card'></div>
+                    <div id='about'></div>
+                    <div id='card'></div>
+                    <div id='card'></div>
+                    <div id='projects'></div>
+                    <div id='card'></div>
+                    <div id='card'></div>
+                    <div id='contact'></div>
+                    <div id='card'></div>
+                </div>
         </div>
     )
 }

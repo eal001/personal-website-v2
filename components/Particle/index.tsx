@@ -12,9 +12,7 @@ export class Particle {
 
     render() {
         return (
-            <div className="particle-container" key={this.key} style={ { top: this.x, left: this.y} }>
-                <div className='particle'></div>
-            </div>
+            <div className='particle' key={this.key} style={ { top: this.y, left: this.x} }></div>
         )
     }
 }
