@@ -6,7 +6,7 @@ $bg-color: #F7EBEC;
 $particle-color: #4b3852;
 $intro-color: #1c1b1f;
 $nav-color: #141316;
-$card-color: transparent;
+$card-color: rgb(28, 27, 31, 0.1);
 $card-outline-color: #e9dce8; //#595a54;
 $font-color: #756277;
 $highlight-color: #c050cf;
@@ -15,9 +15,11 @@ $TOTALS: 100;
 // General Styling
 
 html {
+    scroll-behavior: smooth;
     body {
         background-color: $bg-color;
         overflow-x: hidden;
+        letter-spacing: 4px;
     }
 }
 
@@ -25,30 +27,39 @@ h1 {
     text-align: center;
     color: $font-color;
     font: 48px $title-font;
-    margin: 0px;
+    margin: 24px;
 }
 
 h2 { 
     text-align: center;
     color: $font-color;
     font: 24px $title-font;
+    margin: 24px;
+    line-height: 1.5;
+    a {
+        font-size: 24px;
+    }
 }
-
-
 
 p {
     text-align: left;
     color: $font-color;
     font: 18px $desc-font;
-
-    a {
-       color: $highlight-color;
-       &:hover{
-        font-weight: 900;
-       }
-    }
+    margin: 16px;
 }
 
+a {
+    font: 18px $desc-font;
+    transition: color 500ms, border 500ms;
+    color: $nav-color;
+    border: 2px solid transparent;
+    padding: 4px;
+    border-radius: 5px;
+    &:hover{
+        color: $highlight-color;
+        border: 2px solid $font-color;
+    }
+}
 // mixins for animation
 
 @mixin animate($animation,$duration,$method,$times,$delay) {
@@ -171,14 +182,28 @@ p {
     z-index: 0;
 }
 
-#card {
+#placeholder {
     position: relative;
     height: 100px;
     width: 80%;
     margin: 10%; 
-    background-color: $card-color;
+    background-color: transparent;
     border-radius: 20px;
     border: 2px solid $card-outline-color
+}
+
+#card {
+    width: 80%;
+    padding: 16px;
+    margin: 10%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    background-color: $card-color;
+    border-radius: 20px;
+    
+    p {
+        text-align: center;
+    }
 }
 
 #nav-bar {
@@ -194,6 +219,7 @@ p {
 
 .nav-link {
     padding: 4px;
+    padding-left: 6px;
     color: $font-color;
     font: 20px $desc-font;
     margin: 4px;
@@ -206,5 +232,21 @@ p {
     &:hover {
         color: $highlight-color;
         border: 2px solid $font-color;
+    }
+}
+
+#about {
+    margin-top: 64px;
+    padding-top: 32px;
+}
+
+#container {
+    display: inline-block;
+    a {
+        padding: 2px;
+        margin: 8px;
+        font-size: 24px;
+        border-radius: 3px;
+        
     }
 }

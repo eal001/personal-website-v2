@@ -7,6 +7,7 @@ import '../styles/globals.css'
 import Intro from '../components/IntroCard'
 import {Particle} from '../components/Particle/index'
 import NavBar from '../components/NavBar';
+import About from '../components/AboutCard'
 
 //create all the particles
 const TOTAL = 100; 
@@ -28,15 +29,15 @@ const App  = () => {
             <div id='overlay'>
                     <Intro/>
                     <NavBar/>
-                    <div id='card'></div>
-                    <div id='about'></div>
-                    <div id='card'></div>
-                    <div id='card'></div>
+                    <About />
+                    <div id='placeholder'></div>
+                    <div id='placeholder'></div>
+                    <div id='placeholder'></div>
                     <div id='projects'></div>
-                    <div id='card'></div>
-                    <div id='card'></div>
+                    <div id='placeholder'></div>
+                    <div id='placeholder'></div>
                     <div id='contact'></div>
-                    <div id='card'></div>
+                    <div id='placeholder'></div>
                 </div>
         </div>
     )
