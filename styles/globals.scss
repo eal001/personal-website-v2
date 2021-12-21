@@ -7,6 +7,7 @@ $particle-color: #4b3852;
 $intro-color: #1c1b1f;
 $nav-color: #141316;
 $card-color: rgb(28, 27, 31, 0.1);
+$fade-color: rgb(247, 235, 236, 0.9);
 $card-outline-color: #e9dce8; //#595a54;
 $font-color: #756277;
 $highlight-color: #c050cf;
@@ -158,7 +159,7 @@ a {
         &:nth-child(#{$i}) {  
             $speed:  random(15);
             $float_animation: float $speed+15+s linear infinite random(60)+s;
-            $wiggle_animation: wiggle ($speed/15)*6+15+s ease-in-out infinite 0ms;
+            $wiggle_animation: wiggle calc($speed/15)*6+15+s ease-in-out infinite 0ms;
             @include animate_n($float_animation, $wiggle_animation)
         }  
     }
@@ -193,7 +194,7 @@ a {
 #center-container {
     height: 100%;
     width: 100%;
-    position: absolute;
+    // position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,11 +261,56 @@ a {
 
 #container {
     display: inline-block;
+    text-align: center;
     a {
         padding: 2px;
         margin: 8px;
         font-size: 24px;
         border-radius: 3px;
-        
+    }
+}
+
+#project {
+    width : 300px;
+    height: 300px;
+    margin: 24px;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+
+    img {
+        border-radius: 10px;
+        z-index: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #wrapper {
+        z-index: 1;
+        margin: 8px;
+        padding: 4px;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: background 500ms;
+        overflow: hidden;
+        border: none;
+
+        p {
+            font-size: 16px;
+            transition: color 500ms;
+            color: transparent;
+        }
+
+        &:hover{
+            background-color: $fade-color;
+            p {
+                color: $font-color;
+            }
+        }
     }
 }
