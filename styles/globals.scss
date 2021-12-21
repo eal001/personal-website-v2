@@ -59,11 +59,18 @@ h2 {
         font-size: 24px;
     }
 }
+h3 {
+    text-align: center;
+    font: 20px $title-font;
+    color: $font-color;
+    margin: 16px;
+    line-height: 1;
+}
 
 p {
     text-align: left;
     color: $font-color;
-    font: 18px $desc-font;
+    font: 16px $desc-font;
     margin: 16px;
 }
 
@@ -233,7 +240,7 @@ a {
     padding: 4px;
     padding-left: 10%;
     background-color: $nav-color;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nav-link {
@@ -300,14 +307,21 @@ a {
         overflow: hidden;
         border: none;
 
+        h3 {
+            transition: color 500ms;
+            color: transparent;
+        }
+
         p {
-            font-size: 16px;
             transition: color 500ms;
             color: transparent;
         }
 
         &:hover{
             background-color: $fade-color;
+            h3 {
+                color: $font-color;
+            }
             p {
                 color: $font-color;
             }

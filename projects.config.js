@@ -32,7 +32,7 @@ const projects = [
     {
         "name": "Data Science in Practice",
         "image": ucsdLogo,
-        "description": "My team and I took large scale, real world data and used pandas, sklearn, and nltk to answer the question \"Is the volume a stock trades at affected by Twitter?\" This class project was supervised by the esteemed Jason Fliescher.",
+        "description": "My team and I took large scale, real world data and used pandas, sklearn, and nltk to answer the question \"Is stock trading volume affected by Twitter?\" Professor Jason Fleischer supervised this class project.",
         "link": "https://github.com/COGS108/Group002-Fa21"
     }
 ]

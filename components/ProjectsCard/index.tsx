@@ -29,6 +29,7 @@ const Project = ({image, name, description, link}) => {
         <div id={'project'} >
             <img src={image.src} alt={name}></img>
             <a id='wrapper' href={link}>
+                <h3>{name}</h3>
                 <p>{description}</p>
             </a>
         </div>
