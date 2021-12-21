@@ -9,6 +9,7 @@ import {Particle} from '../components/Particle/index'
 import NavBar from '../components/NavBar';
 import About from '../components/AboutCard'
 import Projects from '../components/ProjectsCard';
+import Contact from '../components/ContactCard';
 
 //create all the particles
 const TOTAL = 100; 
@@ -32,6 +33,7 @@ const App  = () => {
                     <NavBar/>
                     <About />
                     <Projects />
+                    <Contact />
                 </div>
         </div>
     )
