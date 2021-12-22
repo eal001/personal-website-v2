@@ -26,7 +26,7 @@ const projects = [
     {
         "name": "Novelly Marketing Website",
         "image": novellyMarket,
-        "description": "I built Novelly's marketing website using Webflow and the professional advice of designer Nicole Davenport and product manager Shantelle Serafin. It describes Novelly's mission to empower young readers and writers.",
+        "description": "I built Novelly's marketing website using Webflow and the professional advice of designer Nicole Davenport and product manager Shantelle Serafin. It describes Novelly's mission to empower young writers.",
         "link": "https://www.novelly.org/"
     }, 
     {
