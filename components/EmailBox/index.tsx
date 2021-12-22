@@ -1,9 +1,9 @@
 import emailjs, { init } from 'emailjs-com';
 import { useState } from 'react';
 
-const SERVICE_ID = process.env.EJS_SERVICE_ID;
-const TEMPLATE_ID = process.env.EJS_TEMPLATE_ID;
-const USER_ID = process.env.EJS_USER_ID;
+const SERVICE_ID = process.env.NEXT_PUBLIC_EJS_SERVICE_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EJS_TEMPLATE_ID;
+const USER_ID = process.env.NEXT_PUBLIC_EJS_USER_ID;
 
 const EmailBox = () => {
 
@@ -39,7 +39,7 @@ const EmailBox = () => {
 
     const handleSubmit = () => {
         console.log(email)
-        
+
         const email_details = {
             from_name: email.name,
             from_email: email.address,

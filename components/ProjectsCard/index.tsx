@@ -10,7 +10,7 @@ const Projects = () => {
                         {
                             projects.map(project => {
                                 return (
-                                    <Project image={project.image} name={project.name} description={project.description} link={project.link}/>   
+                                    <Project key={project.name} image={project.image} name={project.name} description={project.description} link={project.link}/>   
                                 )
                             })
                         }
@@ -22,10 +22,10 @@ const Projects = () => {
     )
 }
 
-const Project = ({image, name, description, link}) => {
+const Project = ({ image, name, description, link}) => {
 
     return (
-        <div key={name} id={'container'}>
+        <div key={'key '+name} id={'container'}>
             <div id={'project'} >
                 <img src={image.src} alt={name}></img>
                 <a id='wrapper' href={link}>

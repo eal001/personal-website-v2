@@ -18,7 +18,7 @@ const projects = [
         "link": "https://github.com/jiuchoe4/rate-my-lease"
     },
     {
-        "name": "RateMyLease",
+        "name": "Workout App",
         "image": workoutApp,
         "description": "A personal passion project: to create a mobile app to log my workouts. I used Swift and iOS Cocoapods Libraries to create an iOS app that I use daily top log my workout routines. This app is a work-in-progress.",
         "link": "https://github.com/eal001/Workout-App"
