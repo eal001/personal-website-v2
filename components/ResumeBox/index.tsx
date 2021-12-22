@@ -8,19 +8,24 @@ const ResumeBox = () => {
     const handleClick = () => {
         setOpen(!isOpen);
 
+        const resume = document.getElementById('resume-viewer');
+
         if(isOpen) {
+            // previously it was open, it has been closed, we have to set everything as if it will open resume again
             setMessage('View Resume');
+            resume.style.height = '0px';
         } else {
+            // previously it was closed, it has been opened, we have to set everything as if it will close resume again
             setMessage('Hide Resume');
+            resume.style.height = '800px';
         }
     }
 
     return(
         <div id='resume'>
-            <div id='center-container'>
+            <div id='vertical-container'>
                 <button onClick={handleClick}>{message}</button>
-                <a href={RESUME} target='_blank' rel='noreferror'>RESUME</a>
-                <embed type='asset/resource' style={{"width": "500px", "height": "1000px"}} src={RESUME}></embed>
+                <embed id='resume-viewer' src={RESUME} ></embed>
             </div>
         </div>
     )
