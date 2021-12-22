@@ -17,7 +17,7 @@ const ResumeBox = () => {
         } else {
             // previously it was closed, it has been opened, we have to set everything as if it will close resume again
             setMessage('Hide Resume');
-            resume.style.height = '800px';
+            resume.style.height = '90vh';
         }
     }
 

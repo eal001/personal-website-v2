@@ -10,22 +10,22 @@ const SocialsBox = () => {
             <div id='center-container'>
                 <div id='container'>
                     <div id='container'>
-                        <a>
+                        <a href='https://www.linkedin.com/in/eal001/'>
                             <img src={LinkedIn.src} alt='LinkedIn'></img>
                         </a>
                     </div>
                     <div id='container'>
-                        <a>
+                        <a href='https://github.com/eal001/'>
                             <img src={Github.src} alt='Github'></img>
                         </a>
                     </div>
                     <div id='container'>
-                        <a>
+                        <a href='https://devpost.com/eal001'>
                             <img src={Devpost.src} alt='Devpost'></img>
                         </a>
                     </div>
                     <div id='container'>
-                        <a>
+                        <a href='https://www.instagram.com/eal001/'>
                             <img src={Instagram.src} alt='Instagram'></img>
                         </a>
                     </div>
