@@ -459,7 +459,7 @@ button {
 #resume-viewer {
     margin-top: 16px;
     margin-bottom: 16px;
-    height: 90vh;
+    height: 0px;
     max-height: 900px;
     width: 100%;
     max-width: 700px;
@@ -484,6 +484,17 @@ button {
         img {
             transition: filter 250ms;
             height: 100%;
+        }
+    }
+}
+
+#footer {
+    padding: 24px;
+    background-color: $nav-color;
+    p {
+        text-align: center;
+        a{
+            color: $emphasis-color;
         }
     }
 }

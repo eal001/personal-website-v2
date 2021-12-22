@@ -10,6 +10,7 @@ import NavBar from '../components/NavBar';
 import About from '../components/AboutCard'
 import Projects from '../components/ProjectsCard';
 import Contact from '../components/ContactCard';
+import Footer from '../components/Footer';
 
 //create all the particles
 const TOTAL = 100; 
@@ -34,6 +35,7 @@ const App  = () => {
                     <About />
                     <Projects />
                     <Contact />
+                    <Footer />
                 </div>
         </div>
     )
