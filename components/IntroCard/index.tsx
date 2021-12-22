@@ -66,7 +66,10 @@ const IntroCard = () => {
                     }
                 }}/>
                 <div id='center-container'>
-                    <h1>Hey, I'm <span id='highlight'>Elliot Lee</span>! <br/>I'm a student software engineer</h1>
+                    <div id='vertical-container'>
+                        <h1>Hey, I'm <span id='highlight'>Elliot Lee</span>! <br/>I'm a student software engineer</h1>
+                        <button><a href='#projects'>Check Out My Work</a></button>
+                    </div>
                 </div>
             </div>
     )
