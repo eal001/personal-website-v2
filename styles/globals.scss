@@ -92,10 +92,13 @@ a {
 input, textarea {
     padding: 8px;
     font: 16px $desc-font;
-    color: $bg-color;
+    color: $font-color;
     background-color: $intro-color;
     border: 2px solid $nav-color;
     resize: vertical;
+    &:focus{
+        outline: 2px solid $highlight-color;
+    }
 }
 
 ::placeholder {
@@ -115,6 +118,12 @@ button {
     font: 16px $desc-font;
     border: 2px solid transparent;
     padding: 8px;
+    transition: border 500ms, background 250ms, color 500ms;
+    &:hover {
+        // background-color: $emphasis-color;
+        color: $highlight-color;
+        border: 2px solid $highlight-color
+    }
 }
 
 // mixins for animation
@@ -353,7 +362,8 @@ button {
 #contact {
     margin-top: 64px;
     padding-top: 32px;
-    border-top: 20px solid $nav-color;
+    padding-bottom: 32px;
+    border-top: 5px solid $highlight-color;
     background-color: $intro-color;
 }
 

@@ -39,6 +39,10 @@ const EmailBox = () => {
 
     const handleSubmit = () => {
         console.log(email)
+        if(email.name == '' || email.address == '' || email.message == ''){
+            console.error('Did not submit email, one of the fields is empty')
+            return ;
+        }
 
         const email_details = {
             from_name: email.name,
@@ -55,6 +59,11 @@ const EmailBox = () => {
         //     });
         
         console.log("submitted email");
+        setEmail({
+            name: "",
+            address: "",
+            message: ""
+        })
     }
 
     return (
