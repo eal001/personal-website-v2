@@ -1,5 +1,5 @@
 import { useState } from "react";
-import RESUME from '../../public/Resume_ElliotLee.pdf'
+import RESUME from './../../Resume_ElliotLee.pdf';
 
 const ResumeBox = () => {
     const [message, setMessage] = useState("View Resume");
@@ -19,6 +19,8 @@ const ResumeBox = () => {
         <div id='resume'>
             <div id='center-container'>
                 <button onClick={handleClick}>{message}</button>
+                <a href={RESUME} target='_blank' rel='noreferror'>RESUME</a>
+                <embed type='asset/resource' style={{"width": "500px", "height": "1000px"}} src={RESUME}></embed>
             </div>
         </div>
     )
