@@ -1,6 +1,5 @@
-import emailjs from 'emailjs-com';
+import emailjs, { init } from 'emailjs-com';
 import { useState } from 'react';
-require('dotenv')
 
 const SERVICE_ID = process.env.EJS_SERVICE_ID;
 const TEMPLATE_ID = process.env.EJS_TEMPLATE_ID;
@@ -40,10 +39,7 @@ const EmailBox = () => {
 
     const handleSubmit = () => {
         console.log(email)
-        console.log(SERVICE_ID)
-        console.log(TEMPLATE_ID)
-        console.log(USER_ID)
-
+        
         const email_details = {
             from_name: email.name,
             from_email: email.address,
