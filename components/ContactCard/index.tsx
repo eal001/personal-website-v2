@@ -3,7 +3,7 @@ import EmailBox from "../EmailBox";
 const ContactCard = () => {
     return (
         <div id='contact'>
-            contact
+            <h1>Let's Talk!</h1>
             <EmailBox />
         </div>
     )

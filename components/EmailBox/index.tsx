@@ -46,22 +46,27 @@ const EmailBox = () => {
             message: email.message
         }
 
-        emailjs.send(SERVICE_ID, TEMPLATE_ID, email_details, USER_ID)
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
+        // comment out for development
+        // emailjs.send(SERVICE_ID, TEMPLATE_ID, email_details, USER_ID)
+        //     .then((result) => {
+        //         console.log(result.text);
+        //     }, (error) => {
+        //         console.log(error.text);
+        //     });
         
         console.log("submitted email");
     }
 
     return (
-        <div id='email-box'>
-            <input type='text' placeholder='Your Email Here' value={email.address} onChange={handleEmailChange}></input>
-            <input type='text' placeholder='Your Name Here' value={email.name} onChange={handleNameChange}></input>
-            <input type='text' placeholder='Your Name Here' value={email.message} onChange={handleMessageChange}></input>
-            <button id='submit' onClick={handleSubmit}>Send</button>
+        <div id='center-container'>
+            <div id='email-box'>
+                <input type='text' placeholder='Your Email Here' value={email.address} onChange={handleEmailChange}></input>
+                <input type='text' placeholder='Your Name Here' value={email.name} onChange={handleNameChange}></input>
+                <textarea type='text' placeholder='Your Message Here' value={email.message} onChange={handleMessageChange}></textarea>
+                <div>
+                    <button id='submit' onClick={handleSubmit}>Send</button>
+                </div>
+            </div>
         </div>
     )
 }
