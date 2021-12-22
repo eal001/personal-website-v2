@@ -90,14 +90,19 @@ a {
 }
 
 input, textarea {
+    letter-spacing: 2px;
     padding: 8px;
     font: 16px $desc-font;
     color: $font-color;
     background-color: $intro-color;
     border: 2px solid $nav-color;
     resize: vertical;
+    transition: border 500ms ;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 5px;
     &:focus{
-        outline: 2px solid $highlight-color;
+        border: 2px solid $highlight-color;
     }
 }
 
@@ -118,11 +123,15 @@ button {
     font: 16px $desc-font;
     border: 2px solid transparent;
     padding: 8px;
-    transition: border 500ms, background 250ms, color 500ms;
+    transition: border 500ms, color 500ms;
+    letter-spacing: 4px;
+    border-radius: 5px;
     &:hover {
-        // background-color: $emphasis-color;
         color: $highlight-color;
         border: 2px solid $highlight-color
+    }
+    &:active {
+        background-color: $emphasis-color;
     }
 }
 
@@ -368,12 +377,14 @@ button {
 }
 
 #email-box {
-    width: 600px;
+    max-width: 600px;
+    width: 80%;
     text-align: center;
     background-color: $nav-color;
     padding: 16px;
     display: flex;
     flex-direction: column;
+    border-radius: 20px;
 
     input, textarea {
         width: auto;
@@ -384,7 +395,8 @@ button {
     div {
         #submit {
             margin: 24px;
-            width: 300px;
+            max-width: 300px;
+            width: 80%;
         }
     }
 }
