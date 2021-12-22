@@ -7,7 +7,8 @@ import '../styles/globals.css'
 import Intro from '../components/IntroCard'
 import {Particle} from '../components/Particle/index'
 import NavBar from '../components/NavBar';
-import About from '../components/AboutCard'
+import Skills from '../components/SkillCard';
+import About from '../components/AboutCard';
 import Projects from '../components/ProjectsCard';
 import Contact from '../components/ContactCard';
 import Footer from '../components/Footer';
@@ -32,6 +33,7 @@ const App  = () => {
             <div id='overlay'>
                     <Intro/>
                     <NavBar/>
+                    <Skills />
                     <About />
                     <Projects />
                     <Contact />
