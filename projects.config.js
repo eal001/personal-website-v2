@@ -12,7 +12,7 @@ const projects = [
         "link": "https://devpost.com/software/bias-ml"
     },
     {
-        "name": "RateMyLease",
+        "name": "Rate My Lease",
         "image": rateMyLease,
         "description": "RateMyLease is a fullstack web app. It assists UC Davis students with finding leases especially after the Covid-19 Lockdown. My team and I use a React frontend, an Express backend, and a MongoDB database.",
         "link": "https://github.com/jiuchoe4/rate-my-lease"

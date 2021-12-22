@@ -16,13 +16,16 @@ $emphasis-color: #b492af;
 $scroll-color: rgb(192, 80, 207, 0.2);
 $scroll-select-color: rgb(192, 80, 207, 0.5);
 $TOTALS: 100;
+$extra-small: 370px;
+$mobile: 650px;
+$tablet: 800px;
 
 // General Styling
 
 html {
     scroll-behavior: smooth;
     body {
-        background-color: $bg-color;
+        background-color: $intro-color;
         overflow-x: hidden;
         overflow-y: overlay;
         letter-spacing: 4px;
@@ -260,7 +263,7 @@ button {
 #card {
     width: 80%;
     padding: 16px;
-    margin: 10%;
+    margin: auto;
     margin-top: 48px;
     margin-bottom: 48px;
     background-color: $card-color;
@@ -280,6 +283,11 @@ button {
     padding-left: 10%;
     background-color: $nav-color;
     z-index: 2;
+
+    @media screen and (max-width: $mobile ){
+        display: none;
+    }
+
 }
 
 .nav-link {
@@ -323,6 +331,7 @@ button {
     position: relative;
     display: flex;
     align-items: stretch;
+    flex-direction: row;
 
     img {
         border-radius: 10px;
@@ -349,11 +358,17 @@ button {
         h3 {
             transition: color 500ms;
             color: transparent;
+            @media screen and (max-width: $extra-small) {
+                font-size: 32px;
+            }
         }
 
         p {
             transition: color 500ms;
             color: transparent;
+            @media screen and (max-width: $extra-small) {
+                display: none;
+            }
         }
 
         &:hover{
@@ -365,6 +380,23 @@ button {
                 color: $font-color;
             }
         }
+
+        @media screen and (max-width: $extra-small) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: $mobile){
+        margin: 0px;
+        margin-top: 24px;
+        margin-top: 24px;
+    }
+    @media screen and (max-width: $extra-small) {
+        width: 200px;
+        height: 200px;
     }
 }
 
