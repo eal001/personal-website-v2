@@ -6,7 +6,7 @@ const IntroCard = () => {
                 <Particles params={{
                     "particles":{
                         "number": {
-                            "value": 100,
+                            "value": 200,
                             "density": {
                                 "enable": true,
                                 "value_area": 1000
@@ -31,7 +31,7 @@ const IntroCard = () => {
                         },
                         "line_linked":{
                             "enable": true,
-                            "distance": 100,
+                            "distance": 150,
                             "color": "#EDDFEF",
                             "width": 1,
                             "opacity": 0.2
@@ -54,7 +54,7 @@ const IntroCard = () => {
                         },
                         "modes": {
                             "grab":{
-                                "distance": 100,
+                                "distance": 150,
                                 "line_linked":{
                                     "opacity": 0.2
                                 }

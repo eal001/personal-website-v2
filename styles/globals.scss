@@ -417,11 +417,15 @@ button {
 }
 
 #contact {
+    position: relative;
     margin-top: 64px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     border-top: 5px solid $highlight-color;
     background-color: $intro-color;
+    padding: 32px;
+
+    #tsparticles {
+        z-index: 0;
+    }
 }
 
 #email-box {
@@ -433,6 +437,7 @@ button {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    z-index: 2;
 
     input, textarea {
         width: auto;
@@ -451,9 +456,12 @@ button {
 
 #resume {
     margin: 32px;
-
     button {
-        background-color: $nav-color;
+        background-color: $intro-color;
+        z-index: 2;
+    }
+    embed {
+        z-index: 2;
     }
 
 }
@@ -469,7 +477,8 @@ button {
 }
 
 #socials {
-    margin: 32px;
+    margin-top: 24px;
+    z-index: 3;
     a {
         width: 50px;
         height: 50px;
