@@ -357,6 +357,35 @@ button {
     }
 }
 
+#skill-box {
+    display: inline-block;
+    background-color: $card-color;
+    margin: 24px;
+    border-radius: 20px;
+    transition: background 500ms;
+    overflow: hidden;
+    text-align: center;
+    &:hover {
+        background-color: $fade-color;
+        a {
+            color: $highlight-color;
+        }
+    }
+    a {
+        height: 3.5em;
+        display: block;
+        color: $font-color;
+        transition: color 500ms;
+        overflow: hidden;
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 3.5em;
+        }
+    }
+}
+
 #project {
     width : 300px;
     height: 300px;
