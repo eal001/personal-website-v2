@@ -1,5 +1,6 @@
 const SkillBox = ({skill, projects}) => {
 
+    //TODO: MAKE CYCLE
     const handleEnter = () => {
         // console.log('entered')
         // we want to trigger the start of an animation
