@@ -375,52 +375,6 @@ button {
         margin-right: auto;
     }
 
-    #wrapper {
-        z-index: 1;
-        margin: 8px;
-        padding: 4px;
-        width: auto;
-        height: auto;
-        background-color: transparent;
-        border-radius: 10px;
-        transition: background 500ms;
-        overflow: hidden;
-        border: none;
-
-        h3 {
-            transition: color 500ms;
-            color: transparent;
-            @media screen and (max-width: $extra-small) {
-                font-size: 32px;
-            }
-        }
-
-        p {
-            transition: color 500ms;
-            color: transparent;
-            @media screen and (max-width: $extra-small) {
-                display: none;
-            }
-        }
-
-        &:hover{
-            background-color: $fade-color;
-            h3 {
-                color: $font-color;
-            }
-            p {
-                color: $font-color;
-            }
-        }
-
-        @media screen and (max-width: $extra-small) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-        }
-    }
-
     @media screen and (max-width: $mobile){
         margin: 0px;
         margin-top: 24px;
@@ -429,6 +383,52 @@ button {
     @media screen and (max-width: $extra-small) {
         width: 200px;
         height: 200px;
+    }
+}
+
+#wrapper {
+    z-index: 1;
+    margin: 8px;
+    padding: 4px;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background 500ms;
+    overflow: hidden;
+    border: none;
+
+    h3 {
+        transition: color 500ms;
+        color: transparent;
+        @media screen and (max-width: $extra-small) {
+            font-size: 32px;
+        }
+    }
+
+    p {
+        transition: color 500ms;
+        color: transparent;
+        @media screen and (max-width: $extra-small) {
+            display: none;
+        }
+    }
+
+    &:hover{
+        background-color: $fade-color;
+        h3 {
+            color: $font-color;
+        }
+        p {
+            color: $font-color;
+        }
+    }
+
+    @media screen and (max-width: $extra-small) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
