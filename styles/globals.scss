@@ -351,9 +351,17 @@ button {
     padding-top: 32px;
 }
 
+#about{
+    padding-top: 32px;
+}
+
 #container {
     display: inline-block;
     text-align: center;
+}
+
+#projects {
+    padding-top: 32px;
 }
 
 #project {
@@ -435,19 +443,31 @@ button {
 #face-container {
     position: relative;
     display: flex;
-    width: 80%;
+    height: 30%;
     max-width: 500px;
     overflow: hidden;
     border-radius: 20px;
     img{
+        right: 0px;
         height: 100%;
         position: absolute;
+
+        @media screen and (max-width: $mobile) {
+            right: -50px;
+        }
+        @media screen and (max-width: $extra-small) {
+            width: 100%;
+            height: auto;
+            right: 0px;
+            bottom: 0px;
+        }
     }
     #wrapper {
         border-radius: 20px;
         top: 0px;
         left: 0px;
     }
+    
 }
 
 #text-container {
