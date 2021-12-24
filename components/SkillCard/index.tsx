@@ -1,6 +1,5 @@
-import SkillBox from "../SkillBox";
 
-const AboutCard = () => {
+const SkillCard = () => {
 
     return (
         <div id='skills'>
@@ -9,44 +8,31 @@ const AboutCard = () => {
                 <h2>
                     I create 
                 </h2>
-                <div id='center-container'>
-                    <SkillBox skill={"fullstack applications"} projects={["BiasML", "Rate My Lease"]} />
-                    <SkillBox skill={"team projects"} projects={["BiasML", "Rate My Lease", "Data Science in Practice"]}/>
-                    <SkillBox skill={"responsive websites"} projects={["BiasML", "Novelly Maketing Website"]}/>
+                <div id='container'>
+                    <p><a href='#projects'>Fullstack applications</a>that utilize a frontend, backend, and SQL database technologies</p>
+                    <p><a href='#projects'>Responsive Websites</a>with intuitive UX/UI design on any device</p>
+                    <p><a href='#projects'>Projects with others</a>that highlight each individual and their unique skills</p>
                 </div>
-                <h2>I use</h2>
-                <p>
-                    <a >Node.js</a>
-                    <a >React & Next.js</a>
-                    <a >Git</a>
-                    <a >Express.js</a>
-                    <a >Google Firebase</a>
-                    <a >Javascript</a>
-                    <a >HTML</a>
-                    <a >CSS & SCSS</a>
-                    <a >Java</a>
-                    <a >Python</a>
-                    <a >Swift</a>
-                    <a >C++</a>
-                    <a >C</a>
-                    <a >ARM</a>
-                </p>
 
                 <h2>
-                    I study
-                    <div id='container'>
-                        <a style={{"float":"left"}}>Algorithm Design</a>
-                        <a style={{"float":"left"}}>Object Oriented Programming</a>
-                        <a style={{"float":"left"}}>Machine Learning</a>
-                        <a style={{"float":"left"}}>Sentiment Analysis</a>
-                        <a style={{"float":"left"}}>Dynamic Programming</a>
-                    </div>
+                    I study 
                 </h2>
-                
+                <p>
+                    at the <a href='https://ucsd.edu/'>University of California San Diego</a> as a Computer Science undergraduate student.
+                </p>
+                <p>
+                    Recently, 
+                    <a >Algorithm Design</a>,
+                    <a >Machine Learning</a>,
+                    <a >Sentiment Analysis</a>, 
+                    and
+                    <a >Dynamic Programming</a> 
+                    are have drawn my interest and I hope to further my learning in these areas until my graduation in 2023!
+                </p>
             </div>
         </div>
     )
 
 }
 
-export default AboutCard;
+export default SkillCard;
