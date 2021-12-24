@@ -60,8 +60,9 @@ h1 {
 h2 { 
     text-align: center;
     color: $font-color;
-    font: 24px $title-font;
+    font: 30px $title-font;
     margin: 24px;
+    margin-bottom: 0px;
     line-height: 1.5;
     a {
         font-size: 24px;
@@ -80,6 +81,9 @@ p {
     color: $font-color;
     font: 16px $desc-font;
     margin: 16px;
+    a{
+        float: none;
+    }
 }
 
 a {
@@ -89,6 +93,7 @@ a {
     border: 2px solid transparent;
     padding: 4px;
     border-radius: 5px;
+    float: left;
     text-decoration: none;
     &:hover{
         color: $highlight-color;
@@ -349,41 +354,6 @@ button {
 #container {
     display: inline-block;
     text-align: center;
-    a {
-        padding: 2px;
-        margin: 8px;
-        font-size: 24px;
-        border-radius: 3px;
-    }
-}
-
-#skill-box {
-    display: inline-block;
-    background-color: $card-color;
-    margin: 24px;
-    border-radius: 20px;
-    transition: background 500ms;
-    overflow: hidden;
-    text-align: center;
-    &:hover {
-        background-color: $fade-color;
-        a {
-            color: $highlight-color;
-        }
-    }
-    a {
-        height: 3.5em;
-        display: block;
-        color: $font-color;
-        transition: color 500ms;
-        overflow: hidden;
-        div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 3.5em;
-        }
-    }
 }
 
 #project {
@@ -460,6 +430,24 @@ button {
         width: 200px;
         height: 200px;
     }
+}
+
+#face-container {
+    display: inline-block;
+    width: 80%;
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 20%;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#text-container {
+    max-width: 400px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #contact {
