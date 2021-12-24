@@ -37,7 +37,7 @@ const EmailBox = () => {
         });
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         console.log(email)
         if(email.name == '' || email.address == '' || email.message == ''){
             console.error('Did not submit email, one of the fields is empty')
@@ -50,7 +50,7 @@ const EmailBox = () => {
             message: email.message
         }
 
-        // comment out for development
+        //comment out for development
         // emailjs.send(SERVICE_ID, TEMPLATE_ID, email_details, USER_ID)
         //     .then((result) => {
         //         console.log(result.text);
