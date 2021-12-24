@@ -8,6 +8,17 @@ const AboutCard = () => {
                 <div id='center-container'>
                     <div id='face-container'>
                         <img src={HEADSHOT.src} alt='headshot'></img>
+                        <a id='wrapper'>
+                            <h3>Its Me!</h3>
+                            <p>
+                                Contemplating the existential horror that is the human existence.
+                                We, the mightiest of Earth's creatures, doomed to walk an insignificant planet, devoid of 
+                                any possibility that our lives will amount to more than an instantaneous blip on the cosmic scale. 
+                                All of our brothers and sisters have fallen victim to the rat race mentality in an egotistical 
+                                attempt to amass meaningless falsehoods and lies in the name of 'wealth' or 'clout'. 
+                                WE ARE DOOMED UNLESS YOU ACCEPT JESUS CHRIST INTO YOUR HEART!
+                            </p>
+                        </a>
                     </div>
                 </div>
 
