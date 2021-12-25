@@ -447,10 +447,12 @@ button {
     max-width: 500px;
     overflow: hidden;
     border-radius: 20px;
+    text-align: center;
     img{
         right: 0px;
         height: 100%;
-        position: absolute;
+        // position: absolute; //uncomment if we are going to put some hover text in fromt of my face
+        min-width: 300px;
 
         @media screen and (max-width: $mobile) {
             right: -50px;
@@ -458,7 +460,7 @@ button {
         @media screen and (max-width: $extra-small) {
             width: 100%;
             height: auto;
-            right: 0px;
+            right: 0px; 
             bottom: 0px;
         }
     }
