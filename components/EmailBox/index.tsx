@@ -51,12 +51,12 @@ const EmailBox = () => {
         }
 
         //comment out for development
-        // emailjs.send(SERVICE_ID, TEMPLATE_ID, email_details, USER_ID)
-        //     .then((result) => {
-        //         console.log(result.text);
-        //     }, (error) => {
-        //         console.log(error.text);
-        //     });
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, email_details, USER_ID)
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
         
         console.log("submitted email");
         setEmail({
