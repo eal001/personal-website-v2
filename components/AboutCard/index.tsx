@@ -1,4 +1,4 @@
-import HEADSHOT from './../../public/headshot.JPG';
+import HEADSHOT from './../../public/headshot.jpg';
 
 const AboutCard = () => {
     return (
