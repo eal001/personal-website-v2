@@ -13,7 +13,7 @@ const EmailBox = () => {
         message: ""
     });
 
-    const handleNameChange = (e) => {
+    const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail({
             name: e.target.value, 
             address: email.address,
@@ -21,7 +21,7 @@ const EmailBox = () => {
         });
     }
 
-    const handleEmailChange = (e) => {
+    const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail({
             name: email.name, 
             address: e.target.value,
@@ -29,7 +29,7 @@ const EmailBox = () => {
         });
     }
 
-    const handleMessageChange = (e) => {
+    const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail({
             name: email.name, 
             address: email.address,
@@ -37,7 +37,7 @@ const EmailBox = () => {
         });
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log(email)
         if(email.name == '' || email.address == '' || email.message == ''){
             console.error('Did not submit email, one of the fields is empty')
