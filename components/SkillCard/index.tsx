@@ -1,19 +1,18 @@
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 const SkillCard = () => {
 
     return (
-        <div id='skills'>
+        <div data-aos='fade-up' data-aos-duration='1000' id='skills'>
             <div id='card'>
                 <h1>What I Do</h1>
                 <h2>
                     I create 
                 </h2>
-                <div id='container'>
-                    <p><a href='#projects'>Fullstack applications</a>that utilize a frontend, backend, and SQL database technologies</p>
-                    <p><a href='#projects'>Responsive Websites</a>with intuitive UX/UI design on any device</p>
-                    <p><a href='#projects'>Projects with others</a>that highlight each individual and their unique skills</p>
-                </div>
-
+                <p><a href='#projects'>Fullstack applications</a>that utilize a frontend, backend, and SQL database technologies</p>
+                <p><a href='#projects'>Responsive Websites</a>with intuitive UX/UI design on any device</p>
+                <p><a href='#projects'>Projects with others</a>that highlight each individual and their unique skills</p>
                 <h2>
                     I study 
                 </h2>

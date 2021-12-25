@@ -12,6 +12,9 @@ import About from '../components/AboutCard';
 import Projects from '../components/ProjectsCard';
 import Contact from '../components/ContactCard';
 import Footer from '../components/Footer';
+import aos from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from 'react';
 
 //create all the particles
 const TOTAL = 100; 
@@ -21,6 +24,11 @@ for(let i = 0; i < TOTAL; i++){
 }
 
 const App  = () => {
+
+    useEffect( ()=> {
+        aos.init({duration: 2000})
+    }, [])
+
     return (
         <div>
             <div id='background'>

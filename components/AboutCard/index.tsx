@@ -2,7 +2,7 @@ import HEADSHOT from './../../public/headshot.JPG';
 
 const AboutCard = () => {
     return (
-        <div id='about'>
+        <div data-aos='fade-up' data-aos-duration='=1000' id='about'>
             <div id='card'>
                 <h1>About Me</h1>
                 <div id='center-container'>

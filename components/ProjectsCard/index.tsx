@@ -2,7 +2,7 @@ import projects from  "../../projects.config.js"
 
 const Projects = () => {
     return (
-        <div id='projects'>
+        <div data-aos='fade-up' data-aos-duration='1000' id='projects'>
             <div id="card">
                 <h1>My Work</h1>
                 <div id='center-container'>
