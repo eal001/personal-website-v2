@@ -3,6 +3,7 @@ import biasML from "./public/BiasML_by_SSerafin.png";
 import workoutApp from "./public/WorkoutApp_icon.png";
 import novellyMarket from "./public/novellylogo1.png";
 import ucsdLogo from "./public/UCSD_logo.jpeg";
+import oldWebsite from "./public/oldfavicon.ico";
 
 const projects = [
     {
@@ -34,6 +35,12 @@ const projects = [
         "image": ucsdLogo,
         "description": "My team and I took large scale, real world data and used pandas, sklearn, and nltk to answer the question \"Is stock trading volume affected by Twitter?\" Professor Jason Fleischer supervised this class project.",
         "link": "https://github.com/COGS108/Group002-Fa21"
+    }, 
+    {
+        "name": "Old Personal Website",
+        "image": oldWebsite,
+        "description": "My old personal website. This was one of the first times that I undertook design decisions for a frontend application alone. It is still up and working, and hosts much of the same information that this site does.",
+        "link": "https://eal001.github.io/personal_website/"
     }
 ]
 
