@@ -1,7 +1,7 @@
 import emailjs, { init } from 'emailjs-com';
 import { useState } from 'react';
 
-const SERVICE_ID = process.env.NEXT_PUBLIC_EJS_SERVICE_ID;
+const SERVICE_ID = process.env.NEXT_PUBLIC_EJS_SERVICE_ID!;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_EJS_TEMPLATE_ID;
 const USER_ID = process.env.NEXT_PUBLIC_EJS_USER_ID;
 
