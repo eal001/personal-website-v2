@@ -1,7 +1,7 @@
 import Github from '../../public/GitHub_logo.png';
 import LinkedIn from '../../public/LinkedIn_logo.png';
-import Devpost from '../../public/DevPost_logo.png';
-import Instagram from '../../public/Instagram_Logo.png';
+import Devpost from '../../public/Devpost_logo.png';
+import Instagram from '../../public/Instagram_logo.png';
 
 const SocialsBox = () => {
 

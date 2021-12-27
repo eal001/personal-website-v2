@@ -1,6 +1,6 @@
 import rateMyLease from "./public/RateMyLease_JChoe.png";
 import biasML from "./public/BiasML_by_SSerafin.png";
-import workoutApp from "./public/WorkoutApp_icon.png";
+import workoutApp from "./public/WorkoutApp_Icon.png";
 import novellyMarket from "./public/novellylogo1.png";
 import ucsdLogo from "./public/UCSD_logo.jpeg";
 import oldWebsite from "./public/oldfavicon.ico";
