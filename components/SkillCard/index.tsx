@@ -1,6 +1,3 @@
-
-import ScrollAnimation from 'react-animate-on-scroll';
-
 const SkillCard = () => {
 
     return (
