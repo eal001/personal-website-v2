@@ -1,9 +1,9 @@
 import emailjs, { init } from 'emailjs-com';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const SERVICE_ID = process.env.NEXT_PUBLIC_EJS_SERVICE_ID!;
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_EJS_TEMPLATE_ID;
-const USER_ID = process.env.NEXT_PUBLIC_EJS_USER_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EJS_TEMPLATE_ID!;
+const USER_ID = process.env.NEXT_PUBLIC_EJS_USER_ID!;
 
 const EmailBox = () => {
 
@@ -29,7 +29,7 @@ const EmailBox = () => {
         });
     }
 
-    const handleMessageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleMessageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         setEmail({
             name: email.name, 
             address: email.address,
@@ -37,7 +37,7 @@ const EmailBox = () => {
         });
     }
 
-    const handleSubmit = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleSubmit = () => {
         console.log(email)
         if(email.name == '' || email.address == '' || email.message == ''){
             console.error('Did not submit email, one of the fields is empty')
@@ -71,7 +71,7 @@ const EmailBox = () => {
             <div id='email-box'>
                 <input type='text' placeholder='Your Email Here' value={email.address} onChange={handleEmailChange}></input>
                 <input type='text' placeholder='Your Name Here' value={email.name} onChange={handleNameChange}></input>
-                <textarea type='text' placeholder='Your Message Here' value={email.message} onChange={handleMessageChange}></textarea>
+                <textarea placeholder='Your Message Here' value={email.message} onChange={handleMessageChange}></textarea>
                 <div>
                     <button id='submit' onClick={handleSubmit}>Send</button>
                 </div>
