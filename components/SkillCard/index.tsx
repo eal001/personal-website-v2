@@ -23,7 +23,7 @@ const SkillCard = () => {
                     <a >Sentiment Analysis</a>, 
                     and
                     <a >Dynamic Programming</a> 
-                    are have drawn my interest and I hope to further my learning in these areas until my graduation in 2023!
+                    have drawn my interest and I hope to further my learning in these areas until my graduation in 2023!
                 </p>
             </div>
         </div>
