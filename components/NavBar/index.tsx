@@ -5,13 +5,13 @@ const NavBar = () => {
     useEffect( () => 
         window.addEventListener("scroll", () => {
             const y = window.pageYOffset;
-            const title_height = document.getElementById("intro").offsetHeight;
+            const title_height = document.getElementById("intro")!.offsetHeight;
             if(title_height < y) {
-                document.getElementById("nav-bar").style.position = "fixed";
-                document.getElementById("nav-bar").style.top = "0px";
+                document.getElementById("nav-bar")!.style.position = "fixed";
+                document.getElementById("nav-bar")!.style.top = "0px";
             } else {
-                document.getElementById("nav-bar").style.position = "absolute";
-                document.getElementById("nav-bar").style.top = "100vh";
+                document.getElementById("nav-bar")!.style.position = "absolute";
+                document.getElementById("nav-bar")!.style.top = "100vh";
             }
         })
     )
