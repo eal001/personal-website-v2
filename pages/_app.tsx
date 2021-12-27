@@ -34,6 +34,7 @@ const App  = () => {
     return (
         <div>
             <Head>
+                <title>Elliot Lee: Student Developer</title>
                 <link rel='shortcut icon' href={FAVICON.src} />
             </Head>
             <div id='background'>
