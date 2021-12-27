@@ -22,7 +22,8 @@ const Projects = () => {
     )
 }
 
-const Project = ({ image, name, description, link}) => {
+
+const Project = ({ image, name, description, link} : {image: StaticImageData, name: string, description: string, link: string}) => {
 
     return (
         <div key={'key '+name} id={'container'}>
