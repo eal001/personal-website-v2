@@ -12,7 +12,7 @@ import About from '../components/AboutCard';
 import Projects from '../components/ProjectsCard';
 import Contact from '../components/ContactCard';
 import Footer from '../components/Footer';
-import aos from 'aos';
+const aos = require( 'aos' );
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
 
