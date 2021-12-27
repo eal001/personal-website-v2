@@ -95,6 +95,7 @@ a {
     border-radius: 5px;
     float: left;
     text-decoration: none;
+
     &:hover{
         color: $highlight-color;
     }
@@ -571,8 +572,12 @@ button {
     background-color: $nav-color;
     p {
         text-align: center;
-        a{
+        a {
             color: $emphasis-color;
+            transition: color 500ms;
+            &:hover {
+                color: $highlight-color;
+            }
         }
     }
 }
