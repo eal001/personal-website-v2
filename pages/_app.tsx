@@ -4,6 +4,8 @@
  */
 
 import '../styles/globals.css'
+import Head from 'next/head';
+import FAVICON from '../public/favicon.ico';
 import Intro from '../components/IntroCard'
 import {Particle} from '../components/Particle/index'
 import NavBar from '../components/NavBar';
@@ -31,6 +33,9 @@ const App  = () => {
 
     return (
         <div>
+            <Head>
+                <link rel='shortcut icon' href={FAVICON.src} />
+            </Head>
             <div id='background'>
                 {
                     particles.map(particle => {
