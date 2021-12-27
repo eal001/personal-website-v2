@@ -33,8 +33,8 @@ const projects = [
     {
         "name": "Data Science in Practice",
         "image": ucsdLogo,
-        "description": "My team and I took large scale, real world data and used pandas, sklearn, and nltk to answer the question \"Is stock trading volume affected by Twitter?\" Professor Jason Fleischer supervised this class project.",
-        "link": "https://github.com/COGS108/Group002-Fa21"
+        "description": "My team and I took large scale, real world data and used pandas, sklearn, and nltk to answer the question \"Is stock trading volume affected by Twitter?\" The github repo is owned by UCSD and private.",
+        "link": "https://youtu.be/9uV_3CgtRa8"
     }, 
     {
         "name": "Old Personal Website",
