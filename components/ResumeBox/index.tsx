@@ -13,11 +13,11 @@ const ResumeBox = () => {
         if(isOpen) {
             // previously it was open, it has been closed, we have to set everything as if it will open resume again
             setMessage('View Resume');
-            resume.style.height = '0px';
+            resume!.style.height = '0px';
         } else {
             // previously it was closed, it has been opened, we have to set everything as if it will close resume again
             setMessage('Hide Resume');
-            resume.style.height = '90vh';
+            resume!.style.height = '90vh';
         }
     }
 
