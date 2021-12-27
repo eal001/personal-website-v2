@@ -290,7 +290,7 @@ button {
 #center-container {
     height: 100%;
     width: 100%;
-    // position: absolute;
+    // position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -448,15 +448,17 @@ button {
 
 #face-container {
     position: relative;
-    display: flex;
-    height: 30%;
+    // display: flex; uncomment if we are going to put text over face shot
+    width: auto;
     max-width: 500px;
     overflow: hidden;
     border-radius: 20px;
     text-align: center;
     img{
+
+        object-fit: contain;
         right: 0px;
-        height: 100%;
+        width: 100%;
         // position: absolute; //uncomment if we are going to put some hover text in fromt of my face
         min-width: 300px;
 
