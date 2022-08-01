@@ -4,6 +4,8 @@ import workoutApp from "./public/WorkoutApp_Icon.png";
 import novellyMarket from "./public/novellylogo1.png";
 import ucsdLogo from "./public/UCSD_logo.jpeg";
 import oldWebsite from "./public/oldfavicon.ico";
+import blueBrownLogo from "./public/3b1bLogo.jpeg";
+import globleLogo from "./public/GlobleLogo.png";
 
 const projects = [
     {
@@ -11,6 +13,18 @@ const projects = [
         "image": biasML,
         "description": "BiasML is a full stack web app. It uses React as a frontend and Google Firebase backend as a service. My team and I implemented webscraping and natural language machine learning to analyze the political bias of web articles.",
         "link": "https://devpost.com/software/bias-ml"
+    },
+    {
+        "name": "My First Basic Neural Net",
+        "image": blueBrownLogo,
+        "description": "Based on the neural network youtube video made by 3Blue1Brown, I built a neural network and trained it on the MNIST dataset. It can accurately identify handwritten digits with about 70-80% accuracy.",
+        "link": "https://github.com/eal001/FirstNeuralNet"
+    },
+    {
+        "name": "9BIM",
+        "image": ucsdLogo,
+        "description": "For my CSE141L course, My team and I implemented a single cycle processor for radio transmission computation. Despite heavy technical limitations, we created a fully functional ISA and its architecture in System Verilog.",
+        "link": "https://github.com/hyl130/CSE141L"
     },
     {
         "name": "Rate My Lease",
@@ -24,6 +38,12 @@ const projects = [
         "description": "A personal passion project: to create a mobile app to log my workouts. I used Swift and iOS Cocoapods Libraries to create an iOS app that I use daily top log my workout routines. This app is a work-in-progress.",
         "link": "https://github.com/eal001/Workout-App"
     }, 
+    {
+        "name": "Globle",
+        "image": globleLogo,
+        "description": "Globle is a fullstack app developed for a hackathon that generates random locations each day for users to explore in their area. Since users in the same area have the same \"getaway\" it offers a way for users to meet up and explore.",
+        "link" : "https://devpost.com/software/globle"
+    },
     {
         "name": "Novelly Marketing Website",
         "image": novellyMarket,

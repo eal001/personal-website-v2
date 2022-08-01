@@ -7,23 +7,21 @@ const SkillCard = () => {
                 <h2>
                     I create 
                 </h2>
-                <p><a href='#projects'>Fullstack applications</a>that utilize a frontend, backend, and SQL database technologies</p>
-                <p><a href='#projects'>Responsive Websites</a>with intuitive UX/UI design on any device</p>
+                <p><a href='#projects'>Fullstack applications</a>that utilize frontend, backend, and database technologies</p>
+                <p><a href='#projects'>Responsive websites</a>with intuitive UX/UI design on any device</p>
                 <p><a href='#projects'>Projects with others</a>that highlight each individual and their unique skills</p>
                 <h2>
                     I study 
                 </h2>
                 <p>
-                    at the <a href='https://ucsd.edu/'>University of California San Diego</a> as a Computer Science undergraduate student.
+                    at the <a href='https://ucsd.edu/'>University of California San Diego</a> as a Computer Science undergraduate student. However outside of school I am still but a student to the grand teachings of the universe.
                 </p>
                 <p>
-                    Recently, 
-                    <a >Algorithm Design</a>,
-                    <a >Machine Learning</a>,
-                    <a >Sentiment Analysis</a>, 
+                    Recently,
+                    <a >reinforcement machine learning</a>
                     and
-                    <a >Dynamic Programming</a> 
-                    have drawn my interest and I hope to further my learning in these areas until my graduation in 2023!
+                    <a >unsupervised machine learning</a>
+                    have drawn my interest and I hope to further my learning in these areas until my graduation in the Spring of 2023!
                 </p>
             </div>
         </div>

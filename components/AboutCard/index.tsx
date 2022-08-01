@@ -24,15 +24,9 @@ const AboutCard = () => {
                                 I work
                             </h2>
                             <p>
-                                as a software development intern at <a href='https://www.novelly.org/'>Novelly</a>, an Ed-Tech Nonprofit that aims to empower young readers and writers. 
-                                You can also find me working at UC San Diego as a gym assistant! 
-                            </p>
-                            <p>
-                                I'm also very proud to announce that I have accepted an offer to work as a software development intern for 
-                                <a href='https://www.amazon.com/'>
-                                    Amazon
-                                </a> 
-                                in the summer of 2022!
+                                as a software development intern at <a href='https://www.amazon.com/'>Amazon</a>, on internal Dynamic Configuration Technologies. 
+                                Shoutout to the best mentor of all time Mr. Don Boonyakamol! 
+                                After the summer of 2022, you will find me working at UC San Diego as a gym assistant. 
                             </p>
                         </div>
                         <div id='text-container'>
