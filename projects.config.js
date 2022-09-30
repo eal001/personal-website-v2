@@ -60,7 +60,7 @@ const projects = [
         "name": "Old Personal Website",
         "image": oldWebsite,
         "description": "My old personal website. This was one of the first times that I undertook design decisions for a frontend application alone. It is still up and working, and hosts much of the same information that this site does.",
-        "link": "https://eal001.github.io/personal_website/"
+        "link": "https://github.com/eal001/personal-website"
     }
 ]
 

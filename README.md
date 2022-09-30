@@ -13,3 +13,6 @@ I will run development environments using yarn as well.
 ```
 yarn dev
 ```
+
+## Deploying Changes ##
+i think vercel handles new deployments, as long as new changes are pushed to master.
